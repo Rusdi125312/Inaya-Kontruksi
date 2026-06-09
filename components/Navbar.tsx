@@ -59,7 +59,7 @@ export default function Navbar() {
         </div>
 
         {/* Tombol Konsultasi */}
-        <a href="https://wa.me/6285720934430" className="border border-[#D4AF37] text-[#D4AF37] px-4 py-2 text-[12px] hover:bg-[#D4AF37] hover:text-black font-bold transition rounded shadow-lg">
+        <a href="https://wa.me/6285720937430" className="border border-[#D4AF37] text-[#D4AF37] px-4 py-2 text-[12px] hover:bg-[#D4AF37] hover:text-black font-bold transition rounded shadow-lg">
           Konsultasi
         </a>
       </div>

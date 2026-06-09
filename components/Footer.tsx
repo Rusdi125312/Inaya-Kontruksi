@@ -14,7 +14,7 @@ export default function Footer() {
             <h3 className="text-xl md:text-3xl font-bold text-white">CONTACT US TODAY</h3>
           </div>
         <button 
-            onClick={() => window.open("https://wa.me/6285720934430?text=Halo%20Inaya%20Konstruksi,%20saya%20ingin%20konsultasi%20mengenai%20layanan%20konstruksi.", "_blank")}
+            onClick={() => window.open("https://wa.me/6285720937430?text=Halo%20Inaya%20Konstruksi,%20saya%20ingin%20konsultasi%20mengenai%20layanan%20konstruksi.", "_blank")}
             className="bg-[#D4AF37] text-black px-6 py-3 font-bold text-xs rounded hover:bg-white transition-all whitespace-nowrap"
           >
             Konsultasi Sekarang

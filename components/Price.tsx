@@ -11,7 +11,7 @@ export default function Pricing() {
 
   // Fungsi untuk handle klik WA
   const handleWhatsApp = (title: string, price: string) => {
-    const phoneNumber = "6281234567890"; // Ganti dengan nomor WA Anda (tanpa + atau 0)
+    const phoneNumber = "628720937430"; // Ganti dengan nomor WA Anda (tanpa + atau 0)
     const message = `Halo Inaya Konstruksi, saya tertarik dengan paket ${title} seharga ${price}. Bisa bantu jelaskan lebih lanjut?`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");

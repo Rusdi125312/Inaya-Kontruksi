@@ -23,7 +23,7 @@ export default function Home() {
     
       <Footer />
   <a 
-  href="https://wa.me/6281234567890" 
+  href="https://wa.me/6285720937430" 
   target="_blank" 
   className="fixed bottom-8 right-8 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center"
 >
