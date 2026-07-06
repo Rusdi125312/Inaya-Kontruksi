@@ -18,7 +18,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="proyek" className="py-12 bg-gray-950 text-white overflow-hidden">
+    <section id="proyek" className="py-12 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header dengan Animasi Muncul */}

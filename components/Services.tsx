@@ -11,27 +11,31 @@ export default function Services() {
   ];
 
   return (
-    <section id="layanan" className="py-5 bg-gray-950 text-white">
+    <section id="layanan" className="py-5 bg-black text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-[#D4AF37] tracking-[0.2em] uppercase text-xs font-bold mb-3">Layanan Kami</h3>
           <h2 className="text-3xl md:text-4xl font-serif font-bold">Solusi Konstruksi Profesional</h2>
         </div>
 
-        <div className="flex flex-row md:grid md:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide">
+        {/* PERUBAHAN UTAMA: 
+           - Gunakan grid-cols-1 untuk mobile (stacking vertikal).
+           - Gunakan sm:grid-cols-2 untuk tablet.
+           - Gunakan md:grid-cols-4 untuk desktop.
+        */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              /* Pengaturan Animasi */
-              initial={{ opacity: 0, y: 50 }} // Muncul dari bawah
-              whileInView={{ opacity: 1, y: 0 }} // Menuju posisi asli
-              viewport={{ once: true, margin: "-100px" }} // Animasi mulai saat card 100px masuk layar
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ 
                 duration: 0.6, 
-                delay: index * 0.15, // Delay bertahap tiap card
-                ease: [0.22, 1, 0.36, 1] // Easing 'smooth' ala profesional
+                delay: index * 0.1,
+                ease: "easeOut"
               }}
-              className="flex-none w-[260px] md:w-full p-8 bg-[#1a1a1a] border border-white/10 rounded-2xl hover:border-[#D4AF37] transition-all group"
+              className="p-8 bg-[#1a1a1a] border border-white/10 rounded-2xl hover:border-[#D4AF37] transition-all group flex flex-col items-center text-center md:items-start md:text-left"
             >
               <div className="text-[#D4AF37] mb-6 group-hover:scale-110 transition-transform duration-500">
                 {service.icon}

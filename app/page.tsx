@@ -20,7 +20,6 @@ export default function Home() {
       <Price />
       <Portfolio />
       <Stats />
-    
       <Footer />
   <a 
   href="https://wa.me/6285720937430" 

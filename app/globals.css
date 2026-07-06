@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Anda bisa menambahkan CSS custom lainnya di bawah sini */
 .gold-text {
@@ -7,13 +10,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 768px) {
-  body {
-    /* 0.6 artinya tampilan desktop dikecilkan menjadi 60% agar muat di HP */
-    zoom: 0.6; 
-    width: 166.66%; /* Menyeimbangkan agar tidak ada ruang kosong di samping */
-    transform-origin: top left;
-  }
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 html {
