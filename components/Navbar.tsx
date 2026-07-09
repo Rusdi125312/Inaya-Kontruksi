@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,10 +25,9 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/95 border-b border-white/10' : 'bg-transparent'}`}>
-      {/* Container utama menggunakan grid agar posisi presisi */}
       <div className="grid grid-cols-[auto_1fr_auto] items-center px-4 h-16 gap-4">
         
-        {/* 1. Logo (Selalu di kiri) */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-none">
           <Image src="/logo-inaya.png" alt="Inaya Logo" width={32} height={32} className="h-8 w-auto" />
           <div className="hidden sm:flex flex-col">
@@ -36,7 +36,7 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* 2. Menu Navigasi (Tengah di Desktop, Scrollable di Mobile) */}
+        {/* Menu Navigasi */}
         <div className="flex items-center gap-x-4 md:gap-x-8 overflow-x-auto whitespace-nowrap scrollbar-hide justify-start md:justify-center px-2">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
@@ -54,7 +54,7 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* 3. Tombol Konsultasi (Selalu di pojok kanan) */}
+        {/* Tombol Konsultasi */}
         <a 
           href="https://wa.me/6285720937430" 
           className="flex-none border border-[#D4AF37] text-[#D4AF37] px-3 py-1.5 md:px-5 text-[10px] md:text-xs hover:bg-[#D4AF37] hover:text-black font-bold transition rounded shadow-lg"
