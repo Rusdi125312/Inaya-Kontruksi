@@ -55,7 +55,7 @@ export default function Pricing() {
   return (
     <section
       id="harga"
-      className="py-20 bg-black text-white"
+      className="py-5 bg-black text-white"
     >
       <div className="max-w-6xl mx-auto px-5">
 

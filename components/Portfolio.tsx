@@ -13,7 +13,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-20 bg-[#0a0a0a] text-white">
+    <section className="py-5 bg-[#0a0a0a] text-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <p className="text-[#D4AF37] uppercase tracking-[0.2em] text-xs font-medium mb-2">Proyek Unggulan</p>
