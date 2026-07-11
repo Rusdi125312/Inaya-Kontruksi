@@ -13,7 +13,7 @@ export default function AboutUs() {
       <Navbar />
 
       {/* Container Section dibuat relative agar bisa menampung background absolute */}
-      <section id="tentang" className={`relative py-16 ${isDetail ? 'pt-32' : ''}`}>
+      <section id="tentang" className={`relative py-5 ${isDetail ? 'pt-32' : ''}`}>
         
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
@@ -24,7 +24,7 @@ export default function AboutUs() {
             className="w-full h-full relative"
           >
             <img 
-              src="/hero-bg.jpeg" 
+              src="/about-us2.jpeg" 
               alt="Inaya Konstruksi Background" 
               className="w-full h-full object-cover object-center" 
             />

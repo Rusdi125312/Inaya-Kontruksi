@@ -1,63 +1,65 @@
 "use client";
 import { motion } from 'framer-motion';
-import Image from 'next/image'; // 1. Import Image
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
-    // 2. Tambahkan property 'image' ke setiap objek
-    { title: "Rumah Modern Minimalis", location: "Jakarta Selatan", size: "large", image: "/proyek1.jpeg" },
-    { title: "Villa Bali Resort", location: "Bali", size: "small", image: "/proyek2.jpeg" },
-    { title: "Ruko 3 Lantai", location: "Surabaya", size: "small", image: "/proyek3.jpeg" },
-    { title: "Renovasi Rumah Classic", location: "Bandung", size: "small", image: "/proyek4.jpeg" },
-    { title: "Kantor Modern", location: "Jakarta Pusat", size: "small", image: "/proyek5.jpeg" },
+    { title: "Besar", image: "/proyek1.jpeg" }, // Ini akan jadi gambar utama
+    { title: "Kecil 1", image: "/proyek2.jpeg" },
+    { title: "Kecil 2", image: "/proyek3.jpeg" },
+    { title: "Kecil 3", image: "/proyek4.jpeg" },
+    { title: "Kecil 4", image: "/proyek5.jpeg" },
   ];
 
   return (
-    <section className="py-5 bg-[#0a0a0a] text-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-12 bg-[#0a0a0a] text-white">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-[#D4AF37] uppercase tracking-[0.2em] text-xs font-medium mb-2">Proyek Unggulan</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Beberapa Hasil Karya Kami</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Hasil Karya Kami</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
-          {projects.map((project) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className={`relative rounded-2xl overflow-hidden group cursor-pointer ${
-                project.size === "large" ? "md:col-span-2 md:row-span-2" : "md:col-span-2"
-              }`}
-            >
-              {/* 3. Gunakan komponen Image */}
-              <Image 
-                src={project.image} 
-                alt={project.title} 
-                fill 
-                className="object-cover transition-transform duration-500 group-hover:scale-110" 
-              />
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-              
-              <div className="absolute bottom-6 left-6">
-                <h4 className="text-xl font-bold">{project.title}</h4>
-                <p className="text-gray-300 text-sm">{project.location}</p>
-              </div>
-            </motion.div>
-          ))}
+        {/* Layout Grid: 1 Besar di Kiri, 4 Kecil di Kanan */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[600px]">
+          
+          {/* Gambar Besar (Kiri) */}
+          <motion.div 
+            className="relative w-full h-[300px] md:h-full rounded-2xl overflow-hidden"
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
+          >
+            <Image 
+              src={projects[0].image} 
+              alt={projects[0].title} 
+              fill 
+              className="object-contain" 
+            />
+          </motion.div>
+
+          {/* Grid 4 Gambar Kecil (Kanan) */}
+          <div className="grid grid-cols-2 gap-4">
+            {projects.slice(1).map((project, index) => (
+              <motion.div
+                key={index}
+                className="relative w-full h-[150px] md:h-full rounded-2xl overflow-hidden"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+              >
+                <Image 
+                  src={project.image} 
+                  alt={project.title} 
+                  fill 
+                  className="object-contain" 
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-     {/* Tombol Lihat Lainnya */}
+      
       <div className="flex justify-center mt-12">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-full font-bold text-sm"
-        >
+        <button className="px-8 py-3 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-full font-bold text-sm">
           Lihat Semua Proyek
-        </motion.button>
+        </button>
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { Award, CheckCircle, Clock, ArrowRight } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <section id="tentang" className="py-5 bg-black text-white overflow-hidden">
+    <section id="tentang" className="py-4 bg-black text-white overflow-hidden">
       {/* Container utama: flex-col untuk mobile, md:flex-row untuk desktop */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
         
