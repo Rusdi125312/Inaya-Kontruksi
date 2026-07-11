@@ -49,7 +49,16 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      {/* ... bagian button tetap sama ... */}
+     {/* Tombol Lihat Lainnya */}
+      <div className="flex justify-center mt-12">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-8 py-3 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-full font-bold text-sm"
+        >
+          Lihat Semua Proyek
+        </motion.button>
+      </div>
     </section>
   );
 }
