@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
-    { title: "Besar", image: "/proyek1.jpeg" }, // Ini akan jadi gambar utama
-    { title: "Kecil 1", image: "/proyek2.jpeg" },
-    { title: "Kecil 2", image: "/proyek3.jpeg" },
-    { title: "Kecil 3", image: "/proyek4.jpeg" },
-    { title: "Kecil 4", image: "/proyek5.jpeg" },
+    { title: "Besar", image: "/proyek111.jpeg" },
+    { title: "Kecil 1", image: "/proyek222.jpeg" },
+    { title: "Kecil 2", image: "/proyek333.jpeg" },
+    { title: "Kecil 3", image: "/proyek444.jpeg" },
+    { title: "Kecil 4", image: "/proyek555.jpeg" },
   ];
 
   return (
@@ -18,19 +18,19 @@ export default function Projects() {
           <h2 className="text-3xl md:text-4xl font-bold">Hasil Karya Kami</h2>
         </div>
 
-        {/* Layout Grid: 1 Besar di Kiri, 4 Kecil di Kanan */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[600px]">
+        {/* Gunakan grid agar lebih mudah mengelola layout responsif */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           
-          {/* Gambar Besar (Kiri) */}
+          {/* Gambar Besar (Kiri) - Menggunakan aspect-video agar mengikuti rasio asli */}
           <motion.div 
-            className="relative w-full h-[300px] md:h-full rounded-2xl overflow-hidden"
+            className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden"
             initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
           >
             <Image 
               src={projects[0].image} 
               alt={projects[0].title} 
               fill 
-              className="object-contain" 
+              className="object-cover" 
             />
           </motion.div>
 
@@ -39,7 +39,7 @@ export default function Projects() {
             {projects.slice(1).map((project, index) => (
               <motion.div
                 key={index}
-                className="relative w-full h-[150px] md:h-full rounded-2xl overflow-hidden"
+                className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -48,7 +48,7 @@ export default function Projects() {
                   src={project.image} 
                   alt={project.title} 
                   fill 
-                  className="object-contain" 
+                  className="object-cover hover:scale-105 transition-transform duration-500" 
                 />
               </motion.div>
             ))}
