@@ -68,6 +68,11 @@ export default function Footer() {
 
       <div className="text-center mt-16 text-[10px] text-gray-700 uppercase tracking-widest">
         <p>© 2026 Inaya Konstruksi. All rights reserved.</p>
+              <Link href="/admin/login" className="hover:text-gray-500" style={{ opacity: 0.05 }}>
+
+          Admin Access
+
+        </Link>
       </div>
     </footer>
   );
