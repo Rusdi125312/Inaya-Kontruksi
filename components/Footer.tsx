@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="space-y-4">
           <h3 className="font-serif font-bold text-[#D4AF37] uppercase tracking-widest text-sm">Informasi</h3>
           <div className="text-gray-400 text-xs space-y-2">
-            <p>📞 081384812919</p>
+            <p>📞 085724964609</p>
             <p>✉️ gunstravis14@gmail.com</p>
           </div>
         </div>
