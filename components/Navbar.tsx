@@ -56,7 +56,7 @@ export default function Navbar() {
 
         {/* Tombol Konsultasi */}
         <a 
-          href="https://wa.me/6285720937430" 
+          href="https://wa.me/6281384812919" 
           className="flex-none border border-[#D4AF37] text-[#D4AF37] px-3 py-1.5 md:px-5 text-[10px] md:text-xs hover:bg-[#D4AF37] hover:text-black font-bold transition rounded shadow-lg"
         >
           Konsultasi

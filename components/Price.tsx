@@ -40,7 +40,7 @@ export default function Pricing() {
     title: string,
     price: string
   ) => {
-    const phoneNumber = "628720937430";
+    const phoneNumber = "6281384812919";
 
     const message = `Halo Inaya Konstruksi, saya tertarik dengan paket ${title} seharga ${price}. Bisa bantu jelaskan lebih lanjut?`;
 
