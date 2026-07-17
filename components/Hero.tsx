@@ -1,8 +1,12 @@
 "use client";
 import { motion } from 'framer-motion';
 import { MessageCircle, ArrowRight } from 'lucide-react'; // Import ikon yang dibutuhkan
+import Portfolio from '@/components/Portfolio';
 
 export default function Hero() {
+  const handleScroll = () => {
+    document.getElementById('proyek-kami')?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section className="relative min-h-[85vh] w-full flex flex-col pt-20 pb-10 overflow-hidden bg-black">
       
@@ -59,10 +63,13 @@ export default function Hero() {
             </a>
             
             {/* Tombol Lihat Proyek dengan Icon Panah */}
-            <a href="/portfolio" className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-white/5 border border-white/20 text-white font-bold text-sm rounded-lg hover:bg-white/10 transition-all">
-              Proyek Kami
-              <ArrowRight size={18} />
-            </a>
+           <button 
+      onClick={handleScroll}
+      className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-white/5 border border-white/20 text-white font-bold text-sm rounded-lg hover:bg-white/10 transition-all cursor-pointer"
+    >
+      Proyek Kami
+      <ArrowRight size={18} />
+    </button>
           </motion.div>
         </div>
       </motion.div>

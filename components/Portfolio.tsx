@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -12,7 +13,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-12 bg-[#0a0a0a] text-white">
+    <section id="proyek-kami" className="py-12 bg-[#0a0a0a] text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Hasil Karya Kami</h2>
