@@ -52,16 +52,17 @@ export default function Hero() {
           {/* Tombol dengan Ikon */}
           <motion.div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
             {/* Tombol Konsultasi dengan Icon WA */}
-            <button className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-[#D4AF37] text-black font-bold text-sm rounded-lg hover:bg-[#b8972f] transition-all">
+            <a 
+          href="https://wa.me/6285724964609"  className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-[#D4AF37] text-black font-bold text-sm rounded-lg hover:bg-[#b8972f] transition-all">
               <MessageCircle size={18} />
               Konsultasi
-            </button>
+            </a>
             
             {/* Tombol Lihat Proyek dengan Icon Panah */}
-            <button className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-white/5 border border-white/20 text-white font-bold text-sm rounded-lg hover:bg-white/10 transition-all">
+            <a href="/portfolio" className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-white/5 border border-white/20 text-white font-bold text-sm rounded-lg hover:bg-white/10 transition-all">
               Proyek Kami
               <ArrowRight size={18} />
-            </button>
+            </a>
           </motion.div>
         </div>
       </motion.div>
