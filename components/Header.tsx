@@ -9,10 +9,18 @@ export default function BannerHeader() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
+        {/* Gambar untuk Desktop (muncul di layar md ke atas) */}
         <img 
           src="/header22.png" 
           alt="Inaya Konstruksi Banner" 
-          className="w-full h-auto object-cover"
+          className="hidden md:block w-full h-auto object-cover"
+        />
+
+        {/* Gambar untuk Mobile (muncul di layar di bawah md) */}
+        <img 
+          src="/header1.jpeg" 
+          alt="Inaya Konstruksi Banner" 
+          className="md:hidden w-full h-auto object-cover"
         />
       </motion.div>
     </div>

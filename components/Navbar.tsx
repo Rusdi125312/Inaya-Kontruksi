@@ -24,11 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    // PERUBAHAN DI SINI: Hapus kelas "fixed top-0"
-    // Navbar sekarang akan mengikuti aliran dokumen (static position),
-    // sehingga posisinya akan berada tepat di bawah komponen <Header />
-    // yang dirender sebelum navbar di dalam page.tsx.
-    <nav className={`w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/95 border-b border-white/10' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/95 border-b border-white/10' : 'bg-transparent'}`}>
       <div className="grid grid-cols-[auto_1fr_auto] items-center px-4 h-16 gap-4">
         
         {/* Logo */}
