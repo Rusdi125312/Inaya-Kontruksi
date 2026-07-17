@@ -16,7 +16,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     databases.listDocuments('6a26e72000382e4d6a68', 'proyek', [
-      Query.limit(6),
+      Query.limit(20),
       Query.orderDesc('$createdAt')
     ])
     .then((response) => {
