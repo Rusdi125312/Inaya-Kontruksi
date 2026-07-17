@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
-import Navbar from '@/components/Navbar'; 
+import Navbar from "@/components/Navbar";
+
 import Footer from '@/components/Footer';
 import { Award, CheckCircle, Clock } from 'lucide-react';
 import Stats from "@/components/Stats";

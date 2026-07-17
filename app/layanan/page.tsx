@@ -1,6 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
-import Navbar from '@/components/Navbar'; 
+import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
 import Stats from "@/components/Stats";
 import Services from "@/components/Services";

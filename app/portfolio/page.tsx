@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { databases } from '@/lib/appwrite';
 import { Query } from 'appwrite';
-import Navbar from '@/components/Navbar'; 
+import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
 import Stats from "@/components/Stats";
 
