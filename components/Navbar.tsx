@@ -14,7 +14,7 @@ export default function Navbar() {
     { label: 'Tentang', href: '/about' },
     { label: 'Layanan', href: '/layanan' },
     { label: 'Proyek', href: '/portfolio' },
-    { label: 'Kontak', href: '/#kontak' },
+    { label: 'Kontak', href: '/kontak' },
   ];
 
   useEffect(() => {
