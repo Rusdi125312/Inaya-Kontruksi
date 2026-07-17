@@ -57,9 +57,9 @@ export default function Projects() {
       </div>
       
       <div className="flex justify-center mt-12">
-        <button className="px-8 py-3 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-full font-bold text-sm">
+        <a href="/portfolio" className="px-8 py-3 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-full font-bold text-sm">
           Lihat Semua Proyek
-        </button>
+        </a>
       </div>
     </section>
   );

@@ -5,8 +5,8 @@ import { Globe, MessageCircle, Music, Camera } from 'lucide-react';
 
 export default function Footer() {
   const socials = [
-    { name: "TIKTOK", value: "inaya_konstruksi_sukabu1", icon: <Music size={20} />, href: "#" },
-    { name: "INSTAGRAM", value: "Gunstravis14", icon: <Camera size={20} />, href: "#" },
+    { name: "TIKTOK", value: "inaya_konstruksi_sukabu1", icon: <Music size={20} />, href: "https://www.tiktok.com/@inaya_konstruksi_sukabu1?_r=1&_t=ZS-9863YTm8ZQQ" },
+    { name: "INSTAGRAM", value: "Gunstravis14", icon: <Camera size={20} />, href: "https://www.instagram.com/gunstravis14?igsh=MWdnZTR4YTJ3c3c0dw==" },
     { name: "WEBSITE", value: "www.inayakonstruksi.com", icon: <Globe size={20} />, href: "/" },
     { name: "WHATSAPP", value: "0857-2496-4609", icon: <MessageCircle size={20} />, href: "https://wa.me/6285724964609" },
   ];
