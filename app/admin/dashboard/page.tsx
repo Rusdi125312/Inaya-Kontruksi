@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { databases, storage } from '@/lib/appwrite';
 import { ID, Query } from 'appwrite';
+import Navbar from "@/components/Navbar";
 
 export default function AdminDashboard() {
   const [proyek, setProyek] = useState<any[]>([]);
@@ -48,7 +49,10 @@ export default function AdminDashboard() {
   };
 
   return (
+
     <div className="p-10 bg-gray-950 min-h-screen text-white">
+      <Navbar  />
+      <br></br>
       <h1 className="text-3xl font-bold mb-6">Dashboard Admin</h1>
       
       {/* Form Tambah */}
