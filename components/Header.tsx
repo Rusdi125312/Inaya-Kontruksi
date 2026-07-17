@@ -18,7 +18,7 @@ export default function BannerHeader() {
 
         {/* Gambar untuk Mobile (muncul di layar di bawah md) */}
         <img 
-          src="/header43.jpeg" 
+          src="/headermobile.jpeg" 
           alt="Inaya Konstruksi Banner" 
           className="md:hidden w-full h-auto object-cover"
         />

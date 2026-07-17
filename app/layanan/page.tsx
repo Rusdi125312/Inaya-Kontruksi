@@ -13,8 +13,8 @@ export default function LayananPage() {
 
       {/* Background Layer - Tetap Fixed */}
       <div className="fixed inset-0 z-0">
-        <img src="/hero-bg.jpeg" alt="Background" className="w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+        <img src="/about-us2.jpeg" alt="Background" className="w-full h-full object-cover opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-black"></div>
       </div>
 
       {/* Content Layer - Z-Index 10 */}
