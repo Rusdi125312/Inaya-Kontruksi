@@ -14,9 +14,10 @@ import AboutUs from "@/components/AboutUs";
 export default function Home() {
   return (
     <main className="bg-gray-950 min-h-screen flex flex-col space-y-0">
-      <Header />
+      
       <Navbar />
       <Hero />
+      <Header />
       <AboutUs />
       <Services />
       <Price />

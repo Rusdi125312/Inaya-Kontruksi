@@ -11,14 +11,14 @@ export default function BannerHeader() {
       >
         {/* Gambar untuk Desktop (muncul di layar md ke atas) */}
         <img 
-          src="/header22.png" 
+          src="/heade23.png" 
           alt="Inaya Konstruksi Banner" 
           className="hidden md:block w-full h-auto object-cover"
         />
 
         {/* Gambar untuk Mobile (muncul di layar di bawah md) */}
         <img 
-          src="/headermobile.jpeg" 
+          src="/heade23.png" 
           alt="Inaya Konstruksi Banner" 
           className="md:hidden w-full h-auto object-cover"
         />
