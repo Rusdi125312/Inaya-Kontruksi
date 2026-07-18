@@ -29,7 +29,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-none">
-          <Image src="/logo-inaya.png" alt="Inaya Logo" width={32} height={32} className="h-8 w-auto" />
+          <Image src="/logo12.png" alt="Inaya Logo" width={32} height={32} className="h-8 w-auto" />
           <div className="hidden sm:flex flex-col">
             <span className="text-[#D4AF37] font-serif font-bold text-sm leading-none">Inaya</span>
             <span className="text-[#D4AF37] font-serif font-bold text-sm leading-none">Konstruksi</span>
