@@ -41,7 +41,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <motion.div className="text-center mb-10">
             <h3 className="text-[#D4AF37] tracking-[0.3em] uppercase text-[10px] font-bold mb-2">Portfolio</h3>
-            <h2 className="text-2xl md:text-4xl font-serif font-bold">Karya Arsitektur Terbaru</h2>
+            <h2 className="text-2xl md:text-4xl font-serif font-bold">Referensi  Arsitektur</h2>
           </motion.div>
 
           {/* Galeri Grid - Dibuat lebih lebar dengan grid responsive */}
