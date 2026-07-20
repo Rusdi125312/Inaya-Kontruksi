@@ -13,7 +13,8 @@ export default function Navbar() {
     { label: 'Home', href: '/' },
     { label: 'Tentang', href: '/about' },
     { label: 'Layanan', href: '/layanan' },
-    { label: 'Proyek', href: '/portfolio' },
+    { label: 'Referensi', href: '/portfolio' },
+    { label: 'Proyek', href: '/projek' },
     { label: 'Kontak', href: '/kontak' },
   ];
 

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { databases, storage } from '@/lib/appwrite';
 import { ID, Query } from 'appwrite';
 import Navbar from "@/components/Navbar";
+import Link from 'next/link';
 
 export default function AdminDashboard() {
   const [proyek, setProyek] = useState<any[]>([]);
@@ -54,6 +55,14 @@ export default function AdminDashboard() {
       <Navbar  />
       <br></br>
       <h1 className="text-3xl font-bold mb-6">Dashboard Admin</h1>
+
+      
+<Link
+        href="/admin/input-pekerjaan"
+        className="inline-block px-6 py-3 mb-8 bg-[#D4AF37] text-black font-bold rounded-lg hover:bg-[#bca331] transition-colors shadow-lg"
+      >
+        + Input Pekerjaan Baru
+</Link>
       
       {/* Form Tambah */}
       <form onSubmit={handleSubmit} className="mb-10 bg-[#111] p-6 rounded-xl border border-white/10">
