@@ -4,8 +4,8 @@ import { Building2, Smile, CalendarDays, ShieldCheck } from 'lucide-react';
 
 export default function Stats() {
   const stats = [
-    { label: "Proyek", value: "150+", icon: <Building2 size={20} /> },
-    { label: "Klien", value: "100+", icon: <Smile size={20} /> },
+    { label: "Proyek", value: "800+", icon: <Building2 size={20} /> },
+    { label: "Klien", value: "700+", icon: <Smile size={20} /> },
     { label: "Pengalaman", value: "10+", icon: <CalendarDays size={20} /> },
     { label: "Komitmen", value: "100%", icon: <ShieldCheck size={20} /> },
   ];
