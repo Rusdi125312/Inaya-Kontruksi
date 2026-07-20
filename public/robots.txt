@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://inaya-konstruksi.com/sitemap.xml
