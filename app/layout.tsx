@@ -24,6 +24,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Inaya Konstruksi | Solusi Konstruksi Profesional",
   description: "Jasa konstruksi, arsitektur, dan renovasi terpercaya.",
+  icons: {
+    icon: "/icon.png",
+    apple:"/icon.png",
+  },
 };
 
 export default function RootLayout({
