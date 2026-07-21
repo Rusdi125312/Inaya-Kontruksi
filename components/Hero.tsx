@@ -63,13 +63,13 @@ export default function Hero() {
             </a>
             
             {/* Tombol Lihat Proyek dengan Icon Panah */}
-           <button 
-      onClick={handleScroll}
+  <a href='/projek'
+      
       className="flex items-center justify-center gap-2 w-full sm:w-48 px-6 py-3 bg-white/5 border border-white/20 text-white font-bold text-sm rounded-lg hover:bg-white/10 transition-all cursor-pointer"
     >
       Proyek Kami
       <ArrowRight size={18} />
-    </button>
+    </a>
           </motion.div>
         </div>
       </motion.div>
