@@ -16,7 +16,7 @@ export default function Projects() {
     <section id="proyek-kami" className="py-12 bg-[#0a0a0a] text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Hasil Karya Kami</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Referensi Proyek</h2>
         </div>
 
         {/* Gunakan grid agar lebih mudah mengelola layout responsif */}
@@ -59,7 +59,7 @@ export default function Projects() {
       
       <div className="flex justify-center mt-12">
         <a href="/portfolio" className="px-8 py-3 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-full font-bold text-sm">
-          Lihat Semua Proyek
+          Lihat Semua Referensi Proyek
         </a>
       </div>
     </section>
